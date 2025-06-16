@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 package com.example.demo.entity;
 
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,59 +8,25 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity
+//@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="Song")
+//@Table(name="Song")
 
 public class Song {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="title", nullable=false)
+    //@Column(name="title", nullable=false)
     private String title;
 
-    @Column(name="author")
+    //@Column(name="author")
     private String author;
 
-    @Column(name="album")
+    //@Column(name="album")
     private String album;
 
-    @Column(name="genre")
+    //@Column(name="genre")
     private String genre;
 }
-=======
-package com.example.demo.entity;
-
-import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Table(name="Song")
-
-public class Song {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name="title", nullable=false)
-    private String title;
-
-    @Column(name="author")
-    private String author;
-
-    @Column(name="album")
-    private String album;
-
-    @Column(name="genre")
-    private String genre;
-}
->>>>>>> 2a49c69d73e63c78138c64afc292d729fd1ca30f
