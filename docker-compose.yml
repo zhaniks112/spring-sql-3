@@ -2,20 +2,20 @@ version: '3.8'
 services:
   app:
     build: .
-    depends_on:
-      - db
+    #depends_on:
+     # - db
     ports:
       - "8081:8081"
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/music
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: 1234
+    # environment:
+     # SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/music
+      #SPRING_DATASOURCE_USERNAME: postgres
+      #SPRING_DATASOURCE_PASSWORD: 1234
 
-  db:
-    image: postgres
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: music
-    ports:
-      - "5432:5432"
+  #db:
+   # image: postgres
+    #environment:
+     # POSTGRES_USER: postgres
+      #POSTGRES_PASSWORD: 1234
+      #POSTGRES_DB: music
+    #ports:
+     # - "5432:5432"
