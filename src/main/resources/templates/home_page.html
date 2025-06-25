@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Home</title>
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <div class="topnav">
-    <a class="active" href="/">Home</a>
-    <a href="/books">Books</a>
+    <a class="active" href="/home"><i class="fas fa-home"></i> Home</a>
+    <a href="/songs"><i class="fas fa-music"></i> Songs</a>
 </div>
-<h1>Home Page</h1>
-<form method = "get" action="/songs">
-    <input name="login" type="text" placeholder="Enter login">
-    <input name="email" type="email" placeholder="Enter email">
-    <input type="submit" value="Show songs">
-</form>
+<div class="container">
+    <h1>Welcome to Music Hub</h1>
+    <form method="post" action="/login" class="song-form">
+        <input name="login" type="text" placeholder="Enter login" required>
+        <input name="email" type="email" placeholder="Enter email" required>
+        <input type="submit" value="Login" class="btn">
+    </form>
+    <div class="buttons">
+        <a href="/songs" class="btn secondary">Explore Songs</a>
+        <a href="#" class="btn">About Us</a>
+    </div>
+</div>
 </body>
 </html>

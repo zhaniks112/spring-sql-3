@@ -7,12 +7,11 @@ import java.util.List;
 public interface SongService {
     SongDto createSong(SongDto songDto);
 
-    SongDto getSongById(Long song_id);
+    SongDto getSongById(Long songId);
 
     List<SongDto> getAllSongs();
 
-    SongDto updateSong(Long song_id, SongDto updated_song);
+    SongDto updateSong(Long songId, SongDto updated_song);
 
-    void deleteSong(Long song_id);
-
+    void deleteSong(Long songId);
 }
