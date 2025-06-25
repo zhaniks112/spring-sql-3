@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method = "post" action="/songs/add" th:object="${NewSong}">
+    <input type="text" name="title", placeholder="Title">
+    <input type="text" name="author", placeholder="Author">
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>
